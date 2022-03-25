@@ -1,0 +1,501 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+/***************************************
+              Modal
+***************************************/
+#ServiceDetailsModal .modal-body .accept-req-modal button{
+    background-color: green;
+    color: #FFFFFF;
+    border-radius: 17px;
+    height: 35px;
+    border: none;
+    width: 100px;
+}
+
+#ServiceDetailsUpcomingModal .modal-body .action-upcoming-modal button{
+    border-radius: 17px;
+    height: 35px;
+    color: #FFFFFF;
+    border: none;
+}
+
+#ServiceDetailsUpcomingModal .modal-body .action-upcoming-modal .cancel-upcoming{
+    width: 80px;
+    background-color: #fa5151;
+}
+
+#ServiceDetailsUpcomingModal .modal-body .action-upcoming-modal .complete-upcoming{
+    width: 120px;
+    background-color: #1D7A8C;
+}
+
+/***************************************
+             Welcome-Tab
+***************************************/
+.welcome-tab{
+    height: 120px;
+    line-height: 120px;
+    background-color: #F9F9F9;
+    margin-bottom: 31px;
+    margin-top:80px;
+}
+
+.welcome-tab .greet{
+    font-size: 30px;
+}
+
+/***************************************
+          Sidebar & Content
+***************************************/
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    display: flex;
+    width: 262px;
+    background-color: #1D7A8C;
+    flex-direction: column;
+}
+
+aside .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    font-size: 18px !important;
+    height: 55px;
+    line-height: 55px;
+    color: white !important;
+    padding: 0 0 0 15px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+aside .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{
+    color: white;
+    background-color: #1a626e ;
+}
+
+aside .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #1a626e;
+    color: white !important;
+    border: none;
+}
+
+.wrapper{
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.table-content{
+    padding-left: 31px;
+    width: 100%;
+    /*max-width: 847px;*/
+}
+
+.table-content table{
+    border: 1px solid #E1E1E1;
+    font-size: 16px;
+}
+
+.table-content table.dataTable{
+    border-collapse: collapse !important;
+}
+
+.table-content table thead{
+    background-color: #F9F9F9;
+}
+
+.table-content table thead{
+    height: 49px;
+    vertical-align: middle;
+    color: #646464;
+}
+
+table.dataTable>thead .sorting:before, 
+table.dataTable>thead .sorting:after, 
+table.dataTable>thead .sorting_asc:before, 
+table.dataTable>thead .sorting_asc:after, 
+table.dataTable>thead .sorting_desc:before, 
+table.dataTable>thead .sorting_desc:after, 
+table.dataTable>thead .sorting_asc_disabled:before, 
+table.dataTable>thead .sorting_asc_disabled:after, 
+table.dataTable>thead .sorting_desc_disabled:before, 
+table.dataTable>thead .sorting_desc_disabled:after{
+bottom: 13.5px !important;
+}
+
+.table-content table tbody tr{
+    height: 71px;
+}
+
+.table-content table tbody tr td:nth-child(1),
+.table-content table tbody tr td:nth-child(4){
+    vertical-align: middle;
+}
+
+.table-content table tbody tr td:nth-child(4){
+    text-align: center;
+}
+
+.table-content .servicehistory-head{
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.table-content .servicehistory-head button{
+    width: 70px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #146371;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+}
+
+.table-content .cancel-btn button{
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #FF6B6B;
+    border: none;
+    width: 80px;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.table-content .cancel-btn button:hover{
+    background-color: #fa5151;
+    color: White;
+}
+
+.table-content .accept-btn button{
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1D7A8C;
+    border: none;
+    width: 80px;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.table-content .accept-btn button:hover {
+    background-color: #1a626e;
+    color: White;
+}
+
+.table-content .page-link{
+    color: #1D7A8C;
+}
+
+.table-content .page-item.active .page-link{
+    background-color: #1D7A8C;
+    color: white;
+    border-color: #1D7A8C;
+}
+
+/* -----ratings----- */
+#ratings .card:not(:last-child){
+    margin-bottom: 10px;
+}
+
+#ratings .card-body{
+    padding-bottom: 0;
+}
+
+#ratings .ratings-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ratings .ratings-content .cust-details{
+    margin-right: 20px;
+}
+
+#ratings .cust-comments p{
+    font-size: 14px;
+}
+
+/* -----block-customer----- */
+#blockcustomer .block-cust-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blockcustomer .card{
+    width: calc(33% - 20px);
+    margin: 10px;
+    min-width: 245px;
+}
+
+#blockcustomer .profile-pic{
+    width: 88px;
+    height: 88px;
+    border: 1px solid #AAAAAA;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blockcustomer .profile-pic img{
+    width: 50px;
+}
+
+#blockcustomer .profile-pic,
+#blockcustomer .cust-name{
+    margin-bottom: 20px;
+}
+
+#blockcustomer .cust-name b{
+    font-size: 20px;
+}
+
+#blockcustomer .block-btn button{
+    width: 80px;
+    border: none;
+    border-radius: 17px;
+    height: 34px;
+    color: #FFFFFF;
+    background-color: #FF6B6B;
+}
+
+#blockcustomer .block-btn button.unblock-btn {
+    width: 85px;
+    border: none;
+    border-radius: 17px;
+    height: 34px;
+    color: #FFFFFF;
+    background-color: #1D7A8C;
+}
+
+#blockcustomer .block-btn button:hover{
+    background-color: #fa5151;
+}
+
+#blockcustomer .block-btn button.unblock-btn:hover {
+    background-color: #1a626e;
+}
+
+/* -----my-settings----- */
+#mysettings .nav-tabs{
+    border-bottom: 1px solid #808080;
+}
+
+#mysettings .nav-item .nav-link{
+    background-color: #FFFFFF;
+    color: #646464 !important;
+    font-weight: bold;
+    padding: 0 20px;
+    border-bottom:1px solid #808080;
+}
+
+#mysettings .nav-item .nav-link.active{
+    color: #1D7A8C !important;
+    border-bottom: 3px solid #1D7A8C;
+}
+
+#mysettings #my-details-st .active-clr{
+    color: #5dbb00;
+}
+
+#mysettings #my-details-st .inactive-clr{
+    color: #bb2c00;
+}
+
+#mysettings #my-details-st .l-head{
+    color: #646464;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mysettings #my-details-st .l-label{
+    color: #646464;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#mysettings #my-details-st hr{
+    margin-top: 10px;
+}
+
+#mysettings #my-details-st form input[name='UserProfilePicture']{
+    display: none;
+}
+
+#mysettings #my-details-st form input[name='UserProfilePicture'] ~ img{
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+#mysettings #my-details-st form input[name='UserProfilePicture']:checked ~ img{
+    border: 2px solid #1D7A8C;
+    border-radius: 50%;
+}
+
+#mysettings #my-details-st .save-btn,
+#mysettings #change-password-st .save-pass-btn{
+    color: #FFFFFF;
+    background-color: #1D7A8C;
+    border: none;
+    border-radius: 17px;
+    height: 34px;
+    width: 80px;
+}
+
+@media screen and (max-width:1199px) {
+
+    /* -----Block Customer----- */
+    #blockcustomer .block-cust-content{
+        justify-content:center;
+    }
+
+    /* -----Sidebar-&-Content----- */
+    aside {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    /* -----Sidebar-&-Content----- */
+    .table-content{
+        padding: 0 20px;
+    }
+
+    .table-content table{
+        border: none;
+    }
+
+    .table-content #newreq table thead,
+    .table-content #upcomingreq table thead,
+    .table-content #servicehistory table thead{
+        display: none;
+    }
+
+    .table-content #newreq table tbody > tr{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 330px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .table-content #upcomingreq table tbody > tr{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 300px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .table-content #servicehistory table tbody > tr{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 200px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .table-content #newreq table tbody tr td:nth-child(4),
+    .table-content #upcomingreq table tbody tr td:nth-child(4){
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .table-content .servicehistory-head{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #ratings .ratings-content{
+        flex-direction: column;
+    }
+
+    #ratings .group1{
+        justify-content: space-between;
+    }
+
+    #ratings .group2{
+        margin-top: 10px;
+    }
+}
+
+@media  screen and (max-width:425px) {
+    /* -----Welcome-Tab----- */
+    .welcome-tab{
+        height: 90px;
+        line-height: 90px;
+    }
+
+    .welcome-tab .greet{
+        font-size: 24px;
+    }
+    
+    /* -----Sidebar-&-Content----- */
+    .table-content table{
+        font-size: 12px;
+    }
+
+    .table-content table tbody > tr{
+        min-height: 285px;
+    }
+
+    .table-content .cancel-btn button{
+        font-size: 12px;
+        height: 28px;
+        width: 60px;
+    }
+
+    #ratings .cust-name b,
+    #ratings .service-details b{
+        font-size: 14px;
+    }
+
+    #ratings .service-details > div{
+        font-size: 13px;
+    }
+
+    #mysettings .nav-tabs{
+        border-bottom: none;
+        flex-direction: column;
+    }
+
+    #mysettings .nav-item .nav-link{
+        border-bottom: none;
+    }
+
+    #mysettings #my-details-st .l-dob{
+        font-size: 13px;
+    }
+}
